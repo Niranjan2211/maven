@@ -6,17 +6,21 @@ wget http://www-us.apache.org/dist/maven/maven-3/3.5.4/binaries/apache-maven-3.5
 
 ```
 tar -xf apache-maven-3.5.4-bin.tar.gz
-# mv apache-maven-3.5.4/ apache-maven/ 
+mv apache-maven-3.5.4/ apache-maven/ 
 ```
 
 ```
-# cd /etc/profile.d/
-# vim maven.sh
+cd /etc/profile.d/
+vim maven.sh
+# Apache Maven Environment Variables
+# MAVEN_HOME for Maven 1 - M2_HOME for Maven 2
+export M2_HOME=/usr/local/src/apache-maven
+export PATH=${M2_HOME}/bin:${PATH}
 ```
 
 ```
-# chmod +x maven.sh
-# source /etc/profile.d/maven.sh
+chmod +x maven.sh
+source /etc/profile.d/maven.sh
 ```
 ```
 [root@server01 profile.d]# mvn -version
