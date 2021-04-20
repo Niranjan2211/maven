@@ -1,5 +1,6 @@
 # maven
-```cd /usr/local/src
+```
+cd /usr/local/src
 # wget http://www-us.apache.org/dist/maven/maven-3/3.5.4/binaries/apache-maven-3.5.4-bin.tar.gz
 ```
 
